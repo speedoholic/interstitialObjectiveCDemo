@@ -13,7 +13,7 @@ Step 2: Go to Info tab to edit your project’s Info.plist and add the following
 	Allow Arbitrary Loads: YES }
 	
 
-Step 3: Go to Appdelegate file and add #import <Sunny/Sunny-Swift.h>. Add the following lines of code in didFinishLaunchingWithOptions method:
+Step 3: Go to Appdelegate file and add **import <Sunny/Sunny-Swift.h>**. Add the following lines of code in didFinishLaunchingWithOptions method:
         
         
         SMLManager *smlManager = [SMLManager sharedInstance];
@@ -41,4 +41,4 @@ Step 4: You can now use the following lines of code to show advertisement in you
       }
 
 
-> **Note: Please make sure that you use #import <Sunny/Sunny-Swift.h> in the files where you are using SMLManager.**
+> **Note: Please make sure that you use **import <Sunny/Sunny-Swift.h>** in the files where you are using SMLManager.**
