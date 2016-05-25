@@ -4,16 +4,16 @@ Demo application featuring the use of Sunny Framework for displaying video ads a
 You can use this project to run a demo and as a reference. 
 For your own iOS project you need to copy and import the **Sunny.framework** file to your project and follow these steps:
 
-Step 1: Select your proj file, go to General tab while selecting your app target and ensure that **Sunny.framework** has been added to **Embedded Binaries** as well as **Linked Frameworks and Libraries**
+**Step 1:** Select your proj file, go to General tab while selecting your app target and ensure that **Sunny.framework** has been added to **Embedded Binaries** as well as **Linked Frameworks and Libraries**
 
-Step 2: Go to Info tab to edit your project’s Info.plist and add the following key value pairs:
+**Step 2:** Go to Info tab to edit your project’s *Info.plist* and add the following key value pairs:
 
 	
 	App Transport Security Settings: {
 	Allow Arbitrary Loads: YES }
 	
 
-Step 3: Go to Appdelegate file and add ``import <Sunny/Sunny-Swift.h>``. Add the following lines of code in didFinishLaunchingWithOptions method:
+**Step 3:** Go to *Appdelegate.m* file and add ``#import <Sunny/Sunny-Swift.h>``. Add the following lines of code in **didFinishLaunchingWithOptions** method:
         
         
         SMLManager *smlManager = [SMLManager sharedInstance];
@@ -22,9 +22,9 @@ Step 3: Go to Appdelegate file and add ``import <Sunny/Sunny-Swift.h>``. Add the
         
  > the token can be created here (iOS_SDK):http://sunnymob.com/dev/apps/index
  
-Step 4: You can now use the following lines of code to show advertisement in your application:
+**Step 4:** You can now use the following lines of code to show advertisement in your application:
     	
-    	SMLManager *smlManager = [SMLManager sharedInstance];
+      SMLManager *smlManager = [SMLManager sharedInstance];
       SMLAdvertisementStatus status = [smlManager showAdvertisement:self];
       switch (status) {
           case SMLAdvertisementStatusComplete:
