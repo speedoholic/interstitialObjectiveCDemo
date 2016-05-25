@@ -1,0 +1,10 @@
+framework module Sunny {
+  umbrella header "Sunny.h"
+
+  export *
+  module * { export * }
+}
+
+module Sunny.Swift {
+    header "Sunny-Swift.h"
+}
