@@ -95,6 +95,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import Foundation;
 @import Foundation.NSURLSession;
 @import ObjectiveC;
+@import SystemConfiguration;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -109,6 +110,11 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @property (nonatomic, readonly, copy) NSString * _Nonnull URLString;
 @end
 
+
+@interface NSURLRequest (SWIFT_EXTENSION(Sunny))
+@property (nonatomic, readonly, copy) NSString * _Nonnull URLString;
+@end
+
 @class NSMutableURLRequest;
 
 @interface NSURLRequest (SWIFT_EXTENSION(Sunny))
@@ -116,12 +122,28 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @end
 
 
-@interface NSURLRequest (SWIFT_EXTENSION(Sunny))
-@property (nonatomic, readonly, copy) NSString * _Nonnull URLString;
+@interface NSURLSession (SWIFT_EXTENSION(Sunny))
 @end
 
+@class NSNotificationCenter;
 
-@interface NSURLSession (SWIFT_EXTENSION(Sunny))
+SWIFT_CLASS("_TtC5Sunny12Reachability")
+@interface Reachability : NSObject
+@property (nonatomic, copy) void (^ _Nullable whenReachable)(Reachability * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable whenUnreachable)(Reachability * _Nonnull);
+@property (nonatomic) BOOL reachableOnWWAN;
+@property (nonatomic, strong) NSNotificationCenter * _Nonnull notificationCenter;
+@property (nonatomic, readonly, copy) NSString * _Nonnull currentReachabilityString;
+- (nonnull instancetype)initWithReachabilityRef:(SCNetworkReachabilityRef _Nonnull)reachabilityRef OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithHostname:(NSString * _Nonnull)hostname error:(NSError * _Nullable * _Null_unspecified)error;
++ (Reachability * _Nullable)reachabilityForInternetConnectionAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
++ (Reachability * _Nullable)reachabilityForLocalWiFiAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (BOOL)startNotifierAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (void)stopNotifier;
+- (BOOL)isReachable;
+- (BOOL)isReachableViaWWAN;
+- (BOOL)isReachableViaWiFi;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 typedef SWIFT_ENUM(NSInteger, SMLAdvertisementStatus) {
@@ -130,21 +152,34 @@ typedef SWIFT_ENUM(NSInteger, SMLAdvertisementStatus) {
   SMLAdvertisementStatusError = 2,
 };
 
+@protocol SMLManagerDelegate;
 @class UIViewController;
 
 SWIFT_PROTOCOL("_TtP5Sunny17SMLManagerService_")
 @protocol SMLManagerService
 + (id <SMLManagerService> _Nonnull)sharedInstance;
-- (void)initializeWithToken:(NSString * _Nonnull)token;
-- (enum SMLAdvertisementStatus)showAdvertisement:(UIViewController * _Nonnull)onController;
+@property (nonatomic, weak) id <SMLManagerDelegate> _Nullable delegate;
+- (void)initializeWithToken:(NSString * _Nonnull)token isVideoOnly:(BOOL)isVideoOnly;
+- (void)showAdvertisement:(UIViewController * _Nonnull)onController;
 @end
 
 
 SWIFT_CLASS("_TtC5Sunny10SMLManager")
 @interface SMLManager : NSObject <SMLManagerService>
+@property (nonatomic, weak) id <SMLManagerDelegate> _Nullable delegate;
 + (id <SMLManagerService> _Nonnull)sharedInstance;
-- (void)initializeWithToken:(NSString * _Nonnull)token;
-- (enum SMLAdvertisementStatus)showAdvertisement:(UIViewController * _Nonnull)onController;
+- (void)initializeWithToken:(NSString * _Nonnull)token isVideoOnly:(BOOL)isVideoOnly;
+- (void)showAdvertisement:(UIViewController * _Nonnull)onController;
+@end
+
+
+SWIFT_PROTOCOL("_TtP5Sunny18SMLManagerDelegate_")
+@protocol SMLManagerDelegate
+@optional
+- (void)smlDidShowAd;
+- (void)smlAdNotReady;
+- (void)smlAdClosed;
+- (void)smlAdIsNowReady:(NSString * _Nonnull)campaignId mediaType:(NSString * _Nonnull)mediaType;
 @end
 
 

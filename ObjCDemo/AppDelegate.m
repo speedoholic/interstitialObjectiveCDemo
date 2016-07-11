@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     SMLManager *smlManager = [SMLManager sharedInstance];
-    [smlManager initializeWithToken:@"1ebbd869-0d6d-44f1-a974-a6e2db04b4a6"];
+    [smlManager initializeWithToken:@"1ebbd869-0d6d-44f1-a974-a6e2db04b4a6" isVideoOnly:false];
     // Override point for customization after application launch.
     return YES;
 }

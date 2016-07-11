@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97506CDF1D339364008A7FE4 /* Sunny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97506CDE1D339364008A7FE4 /* Sunny.framework */; };
+		97506CE01D339371008A7FE4 /* Sunny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97506CDE1D339364008A7FE4 /* Sunny.framework */; };
+		97506CE11D339371008A7FE4 /* Sunny.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97506CDE1D339364008A7FE4 /* Sunny.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		97D220731CF45135002AFD9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D220721CF45135002AFD9A /* main.m */; };
 		97D220761CF45135002AFD9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D220751CF45135002AFD9A /* AppDelegate.m */; };
 		97D220791CF45135002AFD9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D220781CF45135002AFD9A /* ViewController.m */; };
 		97D2207C1CF45135002AFD9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D2207A1CF45135002AFD9A /* Main.storyboard */; };
 		97D2207E1CF45136002AFD9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97D2207D1CF45136002AFD9A /* Assets.xcassets */; };
 		97D220811CF45136002AFD9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D2207F1CF45136002AFD9A /* LaunchScreen.storyboard */; };
-		97D220AB1CF5367E002AFD9A /* Sunny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D220AA1CF5367E002AFD9A /* Sunny.framework */; };
-		97D220AC1CF53687002AFD9A /* Sunny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D220AA1CF5367E002AFD9A /* Sunny.framework */; };
-		97D220AD1CF53687002AFD9A /* Sunny.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97D220AA1CF5367E002AFD9A /* Sunny.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		97D2208D1CF451A7002AFD9A /* Embed Frameworks */ = {
+		9738470C1D05340900D1271B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				97D220AD1CF53687002AFD9A /* Sunny.framework in Embed Frameworks */,
+				97506CE11D339371008A7FE4 /* Sunny.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		97506CDE1D339364008A7FE4 /* Sunny.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sunny.framework; sourceTree = "<group>"; };
 		97D2206E1CF45135002AFD9A /* ObjCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D220721CF45135002AFD9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97D220741CF45135002AFD9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		97D2207D1CF45136002AFD9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97D220801CF45136002AFD9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97D220821CF45136002AFD9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97D220AA1CF5367E002AFD9A /* Sunny.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sunny.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97D220AC1CF53687002AFD9A /* Sunny.framework in Frameworks */,
-				97D220AB1CF5367E002AFD9A /* Sunny.framework in Frameworks */,
+				97506CE01D339371008A7FE4 /* Sunny.framework in Frameworks */,
+				97506CDF1D339364008A7FE4 /* Sunny.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,7 @@
 		97D220881CF45177002AFD9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				97D220AA1CF5367E002AFD9A /* Sunny.framework */,
+				97506CDE1D339364008A7FE4 /* Sunny.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 				97D2206A1CF45135002AFD9A /* Sources */,
 				97D2206B1CF45135002AFD9A /* Frameworks */,
 				97D2206C1CF45135002AFD9A /* Resources */,
-				97D2208D1CF451A7002AFD9A /* Embed Frameworks */,
+				9738470C1D05340900D1271B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,7 +140,7 @@
 				TargetAttributes = {
 					97D2206D1CF45135002AFD9A = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = LG8J7X9M66;
+						DevelopmentTeam = JJH59JSZ62;
 					};
 				};
 			};
@@ -305,7 +305,7 @@
 				INFOPLIST_FILE = ObjCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.daimler.expatapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunnymob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -326,7 +326,7 @@
 				INFOPLIST_FILE = ObjCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.infosys.daimler.expatapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sunnymob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -351,6 +351,7 @@
 				97D220871CF45136002AFD9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

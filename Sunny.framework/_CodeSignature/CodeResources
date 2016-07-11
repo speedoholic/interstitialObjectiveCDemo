@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Sunny-Swift.h</key>
 		<data>
-		vCSGEpA+eWTVF6+BIF9jCFkcjOs=
+		HBb6xA8q1n4qHlXuvrOZgkUTYRE=
 		</data>
 		<key>Headers/Sunny.h</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/Sunny.swiftmodule/arm.swiftdoc</key>
 		<data>
-		e68UT108nfQOR3yl0OPqVzRz6HM=
+		Id8m1zdMFyfDFpRC/1L44THdhk0=
 		</data>
 		<key>Modules/Sunny.swiftmodule/arm.swiftmodule</key>
 		<data>
-		f7GPbJFTATr65ZvFrMPfGWoXyCo=
+		2yZjmVKAPEwgW1EFfgwB5B0msmc=
 		</data>
 		<key>Modules/Sunny.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		L5u4EAH38mnoUw9sv3yrdIFcLYY=
+		D0AOLX2xBNNpRsR8yZH4uPCIOaw=
 		</data>
 		<key>Modules/Sunny.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		NMm9IEzpJL8vmwYdxBCXr/WHHUU=
+		9z20k3y/2c1nFnO0ML8mrBR6dVs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,19 +46,19 @@
 		</data>
 		<key>SMLMain.storyboardc/N31-7W-iyu-view-zke-uZ-5a5.nib</key>
 		<data>
-		hyzx1ivlXy370/qqBJMx/ggVNig=
+		Y4qrEavATz6WAIOmCoCNZDSqbfo=
 		</data>
 		<key>SMLMain.storyboardc/W3y-Ea-CUz-view-h1T-Sj-gwj.nib</key>
 		<data>
-		GU+zos74fUPEpSf63upa7xlufw0=
+		NMSJf8YYMAodKJSov96pc+fS8E4=
 		</data>
 		<key>SMLMain.storyboardc/advertisementController.nib</key>
 		<data>
-		Hw7/udhCTDcQsBOTIKqwPeL9xKs=
+		OG+Rpqsk0xC1msRFhp+VYhVIqxg=
 		</data>
 		<key>SMLMain.storyboardc/smlVideoController.nib</key>
 		<data>
-		7D+g8NWBfZWHLL3KonIwofgmEBw=
+		N9jNncB+XMtsa3SjiJfvVUVxems=
 		</data>
 		<key>SML_download_button@2x.png</key>
 		<data>
@@ -68,13 +68,21 @@
 		<data>
 		f1jy7GXSMm3/GYwCzHjWcWNSN78=
 		</data>
-		<key>redCross@2x.png</key>
+		<key>close@2x.png</key>
 		<data>
-		v37HdNzsBUTS/KakrV4iUqLdAdY=
+		ZcXkmPMQkLbUit93XRLVd7tl/wQ=
 		</data>
-		<key>redCross@3x.jpg</key>
+		<key>close@3x.png</key>
 		<data>
-		PK4GtroS7euj0gv7qJYpKJbUBoI=
+		bJHp8cQn2QGo+RaRcqyDtddrR4U=
+		</data>
+		<key>download@2x.png</key>
+		<data>
+		2F9wT9uOtOda6JbJUJTBNyDy9HI=
+		</data>
+		<key>download@3x.png</key>
+		<data>
+		KcSsk6NUSrCQ3LMUY/VbjJxLruI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,11 +91,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vCSGEpA+eWTVF6+BIF9jCFkcjOs=
+			HBb6xA8q1n4qHlXuvrOZgkUTYRE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Kpf1zHENvp6JcGHd6xMciwV/+I1Saxuvvnt59dT/dMo=
+			z3hxgvbR7ET4To2D401E1sf8r0jQtXkldD5w1EKToW0=
 			</data>
 		</dict>
 		<key>Headers/Sunny.h</key>
@@ -116,44 +124,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e68UT108nfQOR3yl0OPqVzRz6HM=
+			Id8m1zdMFyfDFpRC/1L44THdhk0=
 			</data>
 			<key>hash2</key>
 			<data>
-			eYX59eJnDohsvxPCMxH9swLcCcVj9tyJ//5cJt+9U/4=
+			miNnzFDFIoUpszwi/gNXbKeHo6ru76H4vSnUq0av6kc=
 			</data>
 		</dict>
 		<key>Modules/Sunny.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f7GPbJFTATr65ZvFrMPfGWoXyCo=
+			2yZjmVKAPEwgW1EFfgwB5B0msmc=
 			</data>
 			<key>hash2</key>
 			<data>
-			talk/1OHntyF0A1XJHXJ9pcQRW7lhye5BFRWmmoDjDw=
+			B7qn3xjzhmQEaNXmc01jL7T6GGLxs4ANKfX2EmFRjZg=
 			</data>
 		</dict>
 		<key>Modules/Sunny.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L5u4EAH38mnoUw9sv3yrdIFcLYY=
+			D0AOLX2xBNNpRsR8yZH4uPCIOaw=
 			</data>
 			<key>hash2</key>
 			<data>
-			0uilOTapTNup5Vkroj9/f2kuVXXBDY6RYrJ1qactwUk=
+			s4kCMORh9w/yPW9U9RPETe8cFTZviBJSf9wAJcH3GAc=
 			</data>
 		</dict>
 		<key>Modules/Sunny.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NMm9IEzpJL8vmwYdxBCXr/WHHUU=
+			9z20k3y/2c1nFnO0ML8mrBR6dVs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vr7AEePhvxvhHMThUNgPmqwSU5gm/tMJR0l14edwES4=
+			1mjPpi/duI2UltLc4uqiR7IEdUGhZeJ4vmcItGcaLe4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -182,44 +190,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hyzx1ivlXy370/qqBJMx/ggVNig=
+			Y4qrEavATz6WAIOmCoCNZDSqbfo=
 			</data>
 			<key>hash2</key>
 			<data>
-			AeoZMEeeU/e5DpIq/X51Fyh5Dh83cWCbaVMQu4myeco=
+			A4IkT74xO2yFaf5EW9DSPLdsV1o93pzkO1rwwnYkLM8=
 			</data>
 		</dict>
 		<key>SMLMain.storyboardc/W3y-Ea-CUz-view-h1T-Sj-gwj.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GU+zos74fUPEpSf63upa7xlufw0=
+			NMSJf8YYMAodKJSov96pc+fS8E4=
 			</data>
 			<key>hash2</key>
 			<data>
-			/LfN9ee5dabDO7Z+5Mm/8GamS6lW8TvLuw7/jdtb7+s=
+			jcXvRPIxmR8flmmYFrRqIN9yB5BgweC7Dtttik/3hic=
 			</data>
 		</dict>
 		<key>SMLMain.storyboardc/advertisementController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Hw7/udhCTDcQsBOTIKqwPeL9xKs=
+			OG+Rpqsk0xC1msRFhp+VYhVIqxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			6FLKoW41svUIKznuzvxV/znLbdleS0ghqxeXNfVR6DM=
+			Eg6L3Ox3tL7ssNlPJTlliC/Xe+hMZvVejPFrWpne1NA=
 			</data>
 		</dict>
 		<key>SMLMain.storyboardc/smlVideoController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7D+g8NWBfZWHLL3KonIwofgmEBw=
+			N9jNncB+XMtsa3SjiJfvVUVxems=
 			</data>
 			<key>hash2</key>
 			<data>
-			tKFaZ7fhqhJ6ToTah9Uk8b1oX0267KWlhbeHRSfQuPs=
+			z6G6JabLSUfmP7O1YgmZ6XMr6meIj3Gxvu+EdyfMHvQ=
 			</data>
 		</dict>
 		<key>SML_download_button@2x.png</key>
@@ -244,26 +252,48 @@
 			AA6YMZTgTAHVka5CIRLkTWqstiMHQGwx+CdlAF9HZbw=
 			</data>
 		</dict>
-		<key>redCross@2x.png</key>
+		<key>close@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			v37HdNzsBUTS/KakrV4iUqLdAdY=
+			ZcXkmPMQkLbUit93XRLVd7tl/wQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			QHyAMxn6pj0lUbvBG+QV+Sl0jqlBSQFuwIHtIZWY7wE=
+			eo6GaT6anlaKrqRs4Y/XvjoiY9vIqSaP4d3ns3aF8Yk=
 			</data>
 		</dict>
-		<key>redCross@3x.jpg</key>
+		<key>close@3x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PK4GtroS7euj0gv7qJYpKJbUBoI=
+			bJHp8cQn2QGo+RaRcqyDtddrR4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			K16GTKTc+pvQXsSkwCVnmI3VT5wCxOGCfsU9We6Z5KY=
+			NjHNYQlV5nMG1CHTZmMb45A2rFAq/Rkyli456aHUpfo=
+			</data>
+		</dict>
+		<key>download@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2F9wT9uOtOda6JbJUJTBNyDy9HI=
+			</data>
+			<key>hash2</key>
+			<data>
+			oh782A3TOa1FIKIKxUXudyAgJm9ErLsw3Z0xJboA3Js=
+			</data>
+		</dict>
+		<key>download@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KcSsk6NUSrCQ3LMUY/VbjJxLruI=
+			</data>
+			<key>hash2</key>
+			<data>
+			VoYNKAO6qmzjcsrg/JLyjhxMf0yBKYlveT4Qn4GLWjM=
 			</data>
 		</dict>
 	</dict>

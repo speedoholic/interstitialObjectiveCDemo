@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Sunny/Sunny-Swift.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <SMLManagerDelegate>
 
 @end
 
