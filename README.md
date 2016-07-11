@@ -19,7 +19,7 @@ For your own iOS project you need to copy and import the **Sunny.framework** fil
         
         
         SMLManager *smlManager = [SMLManager sharedInstance];
-        [smlManager initializeWithToken:@"1ebbd869-0d6d-44f1-a974-a6e2db04b4a6"];
+        [smlManager initializeWithToken:@"1ebbd869-0d6d-44f1-a974-a6e2db04b4a6" isVideoOnly:false];
         
         
  > the token can be created here (iOS_SDK):http://sunnymob.com/dev/apps/index
@@ -27,20 +27,29 @@ For your own iOS project you need to copy and import the **Sunny.framework** fil
 **Step 5:** You can now use the following lines of code to show advertisement in your application:
     	
       SMLManager *smlManager = [SMLManager sharedInstance];
-      SMLAdvertisementStatus status = [smlManager showAdvertisement:self];
-      switch (status) {
-          case SMLAdvertisementStatusComplete:
-              NSLog(@"No error found");
-              break;
-          case SMLAdvertisementStatusReady:
-              NSLog(@"NOW READY TO SHOW AD");
-              //If your application is having user intensive functionality, you can choose to comment the following line of code.
-              [smlManager showAdvertisement:self];
-              break;
-          case SMLAdvertisementStatusError:
-              NSLog(@"Error! Please check your token or contact SunnyMob Customer Care");
-              break;
-      }
+      [smlManager showAdvertisement:self];
 
+**Step 6(Optional):** Adopt SMLManagerDelegate (Swift Protocol) in your view controller and add the following optional methods to learn the state of your advertisement:
+	
+	- (void)smlDidShowAd {
+	    NSLog(@"Ad displayed successfully");
+	}
+
+	- (void)smlAdNotReady {
+	    NSLog(@"Ad is not ready yet");
+	}
+
+	- (void)smlAdClosed {
+	    NSLog(@"Ad closed by user");
+	}
+
+	- (void)smlAdIsNowReady:(NSString *)campaignId mediaType:(NSString *)mediaType {
+	    NSLog(@"Ad is now ready for %@ with Media Type: %@",campaignId,mediaType);
+	}
+
+**The adoption of mentioned protocol requires you to set the delegate somewhere. This might be done in ViewDidLoad method of your ViewController. Please refer to the example project for more details.**
+
+	SMLManager *smlManager = [SMLManager sharedInstance];
+	[smlManager setDelegate:self];
 
 > **Note: Please make sure that you use ``#import <Sunny/Sunny-Swift.h>`` in the files where you are using SMLManager.**
