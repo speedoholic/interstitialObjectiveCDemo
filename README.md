@@ -1,4 +1,4 @@
-# sunnyMobObjectiveCDemo
+# interstitialObjectiveCDemo
 Demo application featuring the use of Sunny Framework for displaying video ads and interstitials in your iOS application based on Objective C.
 
 You can use this project to run a demo and as a reference. 
